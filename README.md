@@ -1,1 +1,1 @@
-# gtp4-o.github.io
+# GTP-4o: Modality-prompted Heterogeneous Graph Learning for Omni-modal Biomedical Representation

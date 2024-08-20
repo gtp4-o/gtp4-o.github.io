@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GTP-4o</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+  <style>
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .gradient-text {
+            background: linear-gradient(to right, #00f, #8a2be2, #f00); /* 渐变色定义 */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="shortcut icon" href="./static/images/aim.ico" type="image/x-icon">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-3 publication-title"><span class="gradient-text">GTP-4o</span>: Modality-prompted Heterogeneous
+            Graph Learning <br> for Omni-modal Biomedical
+            Representation</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://xggnet.github.io/">Chenxin Li</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://xinyuliu-jeffrey.github.io/">Xinyu Liu</a><sup>1†</sup>,</span>
+                <span class="author-block">
+                  <a href="https://scholar.google.com/citations?user=AM7gvyUAAAAJ&hl=en">Cheng Wang</a><sup>1†</sup>,</span>
+                  <span class="author-block">
+                    <a href="https://yifliu3.github.io/">Yifan Liu</a><sup>1</sup>,
+                  </span>
+                  <span class="author-block">
+                    <a href="https://scholar.google.com.hk/citations?user=fCzlLE4AAAAJ&hl=zh-CN">Weihao Yu</a><sup>1</sup>,
+                  </span>
+                  <span class="author-block">
+                    <a href="https://amandajshao.github.io/">Jing Shao</a><sup>2</sup>
+                  </span>
+           
+            <span class="author-block">
+              <a href="http://www.ee.cuhk.edu.hk/~yxyuan/people/people.htm">Yixuan Yuan</a><sup>1‡</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>The Chinese University of Hong Kong,</span>
+            <span class="author-block"><sup>2</sup>Shanghai AI Lab</span>
+            <!-- <span class="author-block"><sup>3</sup>ByteDance</span> -->
+          </div>
+
+          <div class="is-size-6 publication-authors">
+            † denotes equal contribution, ‡ denotes corresponding author
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file"></i>
+                  </span>
+                  <span>BibTeX</span>
+                </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <hr style="margin-top:0px">
+        <div class="content has-text-justified">
+          <p>
+            Recent advances in learning multi-modal representation have witnessed the success in biomedical domains. <b>While</b> established techniques enable handling multi-modal information, the challenges are posed when extended to various clinical modalities and practical modality-missing setting due to the inherent modality gaps.
+            <b>To</b> tackle these, we propose an innovative Modality-<b style="color: #8A2BE2;">p</b>rompted He<b style="color: #8A2BE2;">t</b>erogeneous <b style="color: #8A2BE2;">G</b>raph <b style="color: #8A2BE2;;">for</b> <b style="color: #8A2BE2;">O</b>mni-modal Learning (<b style="color: #8A2BE2;">GTP-4o</b>), which embeds the numerous disparate clinical modalities into a unified  representation, completes the deficient embedding of missing modality and reformulates the cross-modal learning with a graph-based aggregation. 
+            <b>Specially</b>, we establish a heterogeneous graph embedding to explicitly capture the diverse semantic properties on both the modality-specific features (nodes) and the cross-modal relations (edges).
+            <b>Then</b>, we design a modality-prompted completion that enables completing the inadequate graph representation of missing modality through a graph prompting mechanism, which generates hallucination graphic topologies to steer the missing embedding towards the intact representation.
+            <b>Through</b> the completed graph, we meticulously develop a knowledge-guided hierarchical cross-modal aggregation consisting of a global meta-path neighbouring to uncover the potential heterogeneous neighbors along the pathways driven by domain knowledge, and a local multi-relation aggregation module for the comprehensive cross-modal interaction across various heterogeneous relations.
+            <b>We</b> assess the efficacy of our methodology on rigorous benchmarking experiments against prior state-of-the-arts. <b>In</b> a nutshell, GTP-4o presents an initial foray into the intriguing realm of embedding, relating and perceiving the heterogeneous patterns from various clinical modalities holistically via a graph theory.
+          </p>
+          
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+</section>
+
+
+<section class="section">
+
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Insight</h2>
+        <hr style="margin-top:0px">
+        <img src="./static/images/teaser.png" alt="" width="900" height="280" class="center">
+        
+
+        <div class="content has-text-justified">
+          <p>
+            <strong>Overview:</strong>
+            Unlike (a) prior methods, (b) our framework
+enables learning unified omni-modal representation from various clinical modalities
+with modality missing and explicit capture of the cross-modal relations through the
+established heterogeneous graph representation.
+          </p>
+        </div>
+
+
+        <div class="container is-max-desktop">
+
+          <div class="columns is-centered">
+            <div class="column is-full-width">
+              <h2 class="title is-3">Framework</h2>
+              <hr style="margin-top:0px">
+              <img src="./static/images/method.png" alt="" width="900" height="280" class="center">
+              
+      
+              <div class="content has-text-justified">
+                <p>
+                  <strong>Pipeline:</strong>
+              We instantiate the omni-modal biomedical
+                  features, and embed them onto (a) the heterogeneous graph space.
+                  Then, we introduce (b) the modality-prompted completion via graph prompting to
+                  complete the missing embedding. After that, we design (c) the knowledge-
+                  guided hierarchical aggregation from a global meta-neighbouring to uncover the het-
+                  erogeneous neighbourhoods and a local multi-relation aggregation to interact features
+                  across various heterogeneous relations.
+                </p>
+              </div>
+      
+
+    
+    <div class="container is-max-desktop">
+
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Experiments</h2>
+          <hr style="margin-top:0px">
+
+
+
+          <h2 class="title is-4">Performance Comparison</h2>
+          We report results on four TCGA benchmarks, using various modality combinations of Genomics, Images, Cell graphs and Texts.
+
+          <img src="./static/images/result.png" alt="" width="680" height="250" class="center">
+          
+          <hr style="margin-top:0px">
+
+          <h2 class="title is-4">Ablation & Visualization</h2>
+          <img src="./static/images/result2.png" alt="" width="900" height="280" class="center"> 
+          <b>(a) Analysis of Modality Usage.</b> We provide the results of GTP-4o by
+          using either Genes, Images, Cell graphs, Texts, or their combinations, on benchmarks of
+          survival prediction (C-Index) and glioma grading (AUC). 
+          <p>
+          <b>(b) Analysis of Modality-
+          prompted Completion.</b> We compare the relation pattern (similarity) in the original
+          graph and the graph that is first removed specific instances then completed.
+          <!-- <hr style="margin-top:0px"> -->
+          <!-- <h2 class="title is-4">Results of embedding multimodal information</h2>
+          <img src="./static/images/pic_modal.jpg" alt="" width="800" height="250" text-align="center" class="center"> -->
+        </div>
+      </div>
+    </div>
+</section>
+
+
+<!-- <section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title" id="bib">BibTeX</h2>
+    <hr style="margin-top:0px">
+    <pre><code>@article{li2024gaussianstego,
+  author    = {Chenxin Li and Hengyu Liu and Zhiwen Fan and Wuyang Li and Yifan Liu and Panwang Pan and Yixuan Yuan},
+  title     = {GaussianStego: Embedding Invisible Information within Generative 3D Gaussian Splattings},
+  journal   = {arXiv preprint},
+  year      = {2024},
+}</code></pre>
+  </div>
+</section> -->
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            The template is borrowed from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
